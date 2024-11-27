@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+ 
+</head>
+<body>
+
+  <header class="header">
+    <img src="./images/logo.svg" alt="">
+  </header>
+  <main>
+    
+    <section class="calculator">
+
+      <article class="calculator__user">
+        <section class="calculator__inputs">
+          <div class="calculator__title">Bill</div>
+          <img src="./images/icon-dollar.svg" alt="">
+          <input class="calculator__input calculator__input--bill " type="number" name="bill" id="bill" placeholder="0">
+        </section>
+
+        
+        <section class="calculator__percentage">
+          <div class="calculator__title">Select Tip %</div>
+          <fieldset class="calculator__btns">
+            <button class="calculator__btn">5</button>
+            <button class="calculator__btn">10</button>
+            <button class="calculator__btn">15</button>
+            <button class="calculator__btn">25</button>
+            <button class="calculator__btn">50</button>
+            <input class="calculator__btn--custom" type="number" placeholder="Custom">
+          </fieldset>
+        </section>
+        <section class="calculator__inputs">
+          <section class="calculator__titles">
+            <div class="calculator__title">Number of People</div>
+            <p class="calculator__error">Can't be zero</p>
+          </section>
+          <img src="./images/icon-person.svg" alt="">
+          <input class="calculator__input calculator__input--people" type="number"  name="bill" id="bill" placeholder="0">
+        </section>
+      </article>
+
+      <article class="calculator__pay">
+        <article class="pay__person">
+            <div class="pay__text">
+              <p class="pay__title">Tip Amount</p>
+              <p class="pay__subtitle">/ Person</p>
+            </div>
+            <p class="pay__total pay__total--amount">0.00</p>
+        </article>
+        <article class="pay__person">
+          <div class="pay__text">
+            <p class="pay__title">Total</p>
+            <p class="pay__subtitle">/ Person</p>
+          </div>
+          <span class="pay__total pay__total--total">0.00</span>
+        </article>
+        <button type="reset" class="pay__btn pay__btn--disabled" disabled>RESET</button>
+      </article>
+
+    </section>
+  
+    
+    
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Pablo Zallio Web Developer</a>.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
